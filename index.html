@@ -40,7 +40,11 @@
   </table>
 
   <script>
-    const GEMINI_API_KEY = "AQ.Ab8RN6KVXqwOPcgqP06VuvzKA2aTCpxlIaqBVkqxzgUFGtT4rg";
+        let GEMINI_API_KEY = localStorage.getItem("gemini_key");
+    if (!GEMINI_API_KEY) {
+      GEMINI_API_KEY = prompt("Enter your Gemini API key:");
+      localStorage.setItem("gemini_key", GEMINI_API_KEY);
+    }
     let data = null;
     let sortedCerts = [];
 
