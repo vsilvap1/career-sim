@@ -1,0 +1,174 @@
+{
+  "baseline_by_major": {
+    "Computer Science": 80810.18,
+    "Information Systems": 76101.39
+  },
+  "certifications": {
+    "Security Operations Analyst": {
+      "lift": 14185.04,
+      "n": 42
+    },
+    "IT Service Management Foundation": {
+      "lift": 13967.9,
+      "n": 9
+    },
+    "Linux Systems Professional": {
+      "lift": 12547.39,
+      "n": 19
+    },
+    "Incident Response Specialist": {
+      "lift": 11405.98,
+      "n": 38
+    },
+    "Cloud Architect Professional": {
+      "lift": 11369.45,
+      "n": 13
+    },
+    "Certified Security Practitioner": {
+      "lift": 11123.88,
+      "n": 29
+    },
+    "Cloud Security Associate": {
+      "lift": 10773.32,
+      "n": 43
+    },
+    "Project Management Associate": {
+      "lift": 10506.85,
+      "n": 15
+    },
+    "Product Management Certificate": {
+      "lift": 10437.94,
+      "n": 19
+    },
+    "Ethical Hacking Associate": {
+      "lift": 9475.69,
+      "n": 35
+    },
+    "Container Platform Administrator": {
+      "lift": 6856.56,
+      "n": 13
+    },
+    "Certified Scrum Practitioner": {
+      "lift": 5751.41,
+      "n": 19
+    },
+    "Data Engineering Professional": {
+      "lift": 5506.18,
+      "n": 51
+    },
+    "Deep Learning Practitioner": {
+      "lift": 5210.73,
+      "n": 36
+    },
+    "Health Informatics Associate": {
+      "lift": 4554.65,
+      "n": 20
+    },
+    "Applied AI Engineer": {
+      "lift": 3559.57,
+      "n": 39
+    },
+    "Advanced SQL Practitioner": {
+      "lift": 3039.28,
+      "n": 34
+    },
+    "Clinical Data Standards Certificate": {
+      "lift": 2815.09,
+      "n": 25
+    },
+    "Machine Learning Associate": {
+      "lift": 2149.33,
+      "n": 38
+    },
+    "Data Analytics Associate": {
+      "lift": 1964.66,
+      "n": 49
+    },
+    "Agile Delivery Practitioner": {
+      "lift": 1815.07,
+      "n": 22
+    },
+    "Software Testing Practitioner": {
+      "lift": 955.84,
+      "n": 71
+    },
+    "Network Infrastructure Associate": {
+      "lift": 846.67,
+      "n": 21
+    },
+    "Cloud Solutions Associate": {
+      "lift": -1090.59,
+      "n": 15
+    },
+    "Full-Stack Web Developer": {
+      "lift": -1317.81,
+      "n": 80
+    },
+    "Java Application Developer": {
+      "lift": -1431.37,
+      "n": 81
+    },
+    "Business Intelligence Developer": {
+      "lift": -3987.29,
+      "n": 47
+    }
+  },
+  "subjects": {
+    "MUSC": {
+      "lift": 2460.42,
+      "n": 1337
+    },
+    "MGMT": {
+      "lift": 2382.62,
+      "n": 1338
+    },
+    "PSYC": {
+      "lift": 2344.5,
+      "n": 1345
+    },
+    "HIST": {
+      "lift": 2328.32,
+      "n": 1327
+    },
+    "SOCY": {
+      "lift": 2267.84,
+      "n": 1340
+    },
+    "ARTH": {
+      "lift": 2224.42,
+      "n": 1308
+    },
+    "SPAN": {
+      "lift": 2091.49,
+      "n": 1396
+    },
+    "PHIL": {
+      "lift": 2052.72,
+      "n": 1328
+    },
+    "ECON": {
+      "lift": 1378.85,
+      "n": 1733
+    },
+    "BIOL": {
+      "lift": 1131.92,
+      "n": 1592
+    },
+    "ACCT": {
+      "lift": 985.35,
+      "n": 1622
+    },
+    "CHEM": {
+      "lift": 589.58,
+      "n": 1668
+    },
+    "PHYS": {
+      "lift": 0.0,
+      "n": 1321
+    },
+    "ENGL": {
+      "lift": 0.0,
+      "n": 2147
+    }
+  }
+}

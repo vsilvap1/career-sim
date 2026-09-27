@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Career Salary Simulator</title>
+  <style>
+    body { font-family: sans-serif; max-width: 700px; margin: 40px auto; }
+    select { font-size: 16px; padding: 6px; margin-bottom: 20px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; }
+    .positive { color: green; }
+    .negative { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Career Salary Simulator</h1>
+
+  <label for="major">Choose your major: </label>
+  <select id="major">
+    <option value="Computer Science">Computer Science</option>
+    <option value="Information Systems">Information Systems</option>
+  </select>
+
+  <p>Baseline salary: <strong id="baseline">--</strong></p>
+
+  <h2>Certifications ranked by salary lift</h2>
+  <table id="certTable">
+    <tr><th>Certification</th><th>Lift</th><th>Sample size</th></tr>
+  </table>
+
+  <script>
+    let data = null;
+
+    fetch("results.json")
+      .then(response => response.json())
+      .then(json => {
+        data = json;
+        updatePage();
+      });
+
+    document.getElementById("major").addEventListener("change", updatePage);
+
+    function updatePage() {
+      if (!data) return;
+
+      const major = document.getElementById("major").value;
+      const baseline = data.baseline_by_major[major];
+      document.getElementById("baseline").textContent = "$" + baseline.toLocaleString();
+
+      const table = document.getElementById("certTable");
+      table.innerHTML = "<tr><th>Certification</th><th>Lift</th><th>Sample size</th></tr>";
+
+      const certs = Object.entries(data.certifications);
+      certs.sort((a, b) => b[1].lift - a[1].lift);
+
+      for (const [name, info] of certs) {
+        const row = table.insertRow();
+        row.insertCell(0).textContent = name;
+        const liftCell = row.insertCell(1);
+        liftCell.textContent = (info.lift >= 0 ? "+$" : "-$") + Math.abs(info.lift).toLocaleString();
+        liftCell.className = info.lift >= 0 ? "positive" : "negative";
+        row.insertCell(2).textContent = info.n;
+      }
+    }
+  </script>
+</body>
+</html>
