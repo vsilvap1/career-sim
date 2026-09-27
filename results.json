@@ -113,62 +113,18 @@
       "n": 47
     }
   },
-  "subjects": {
-    "MUSC": {
-      "lift": 2460.42,
-      "n": 1337
+  "roi_by_major": {
+    "Computer Science": {
+      "avg_net_cost": 35801.78,
+      "avg_loans": 18757.89,
+      "avg_salary": 80810.18,
+      "avg_payback_years": 0.46
     },
-    "MGMT": {
-      "lift": 2382.62,
-      "n": 1338
-    },
-    "PSYC": {
-      "lift": 2344.5,
-      "n": 1345
-    },
-    "HIST": {
-      "lift": 2328.32,
-      "n": 1327
-    },
-    "SOCY": {
-      "lift": 2267.84,
-      "n": 1340
-    },
-    "ARTH": {
-      "lift": 2224.42,
-      "n": 1308
-    },
-    "SPAN": {
-      "lift": 2091.49,
-      "n": 1396
-    },
-    "PHIL": {
-      "lift": 2052.72,
-      "n": 1328
-    },
-    "ECON": {
-      "lift": 1378.85,
-      "n": 1733
-    },
-    "BIOL": {
-      "lift": 1131.92,
-      "n": 1592
-    },
-    "ACCT": {
-      "lift": 985.35,
-      "n": 1622
-    },
-    "CHEM": {
-      "lift": 589.58,
-      "n": 1668
-    },
-    "PHYS": {
-      "lift": 0.0,
-      "n": 1321
-    },
-    "ENGL": {
-      "lift": 0.0,
-      "n": 2147
+    "Information Systems": {
+      "avg_net_cost": 35691.07,
+      "avg_loans": 18368.19,
+      "avg_salary": 76101.39,
+      "avg_payback_years": 0.5
     }
   }
 }
